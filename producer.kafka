@@ -1,0 +1,12 @@
+PRODUCER keyed-message
+topic: example-topic
+key: mykeyq
+record content
+
+###
+
+PRODUCER non-keyed-json-message
+topic: example-topic
+{
+    "type": "my_test_event-{{random.number}}"
+}
