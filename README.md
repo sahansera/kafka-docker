@@ -1,5 +1,7 @@
 # kafka-docker
-A quick way to get a local Kafka instance up and running with Docker
+A quick way to get a local Kafka instance up and running with Docker.
+
+Related blog post: https://sahansera.dev/setting-up-kafka-locally-for-testing/
 
 ## Usage
 
