@@ -12,8 +12,8 @@ docker-compose up -d
 ### Producer
 ```sh
 docker exec --interactive --tty broker \
-kafka-console-consumer --bootstrap-server broker:9092 \
-                       --topic quickstart \
+kafka-console-consumer --bootstrap-server localhost:9092 \
+                       --topic example-topic \
                        --from-beginning
 ```
 
