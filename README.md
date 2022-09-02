@@ -13,10 +13,10 @@ docker-compose up -d
 
 ### Producer
 ```sh
+
 docker exec --interactive --tty broker \
-kafka-console-consumer --bootstrap-server localhost:9092 \
-                       --topic example-topic \
-                       --from-beginning
+kafka-console-producer --bootstrap-server localhost:9092 \
+                       --topic example-topic
 ```
 
 
@@ -24,6 +24,7 @@ kafka-console-consumer --bootstrap-server localhost:9092 \
 
 ```sh
 docker exec --interactive --tty broker \
-kafka-console-producer --bootstrap-server localhost:9092 \
-                       --topic example-topic
+kafka-console-consumer --bootstrap-server localhost:9092 \
+                       --topic example-topic \
+                       --from-beginning
 ```
